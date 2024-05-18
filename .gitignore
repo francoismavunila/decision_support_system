@@ -1,0 +1,33 @@
+# IDE and OS specific files
+*.sublime-project
+*.sublime-workspace
+.idea/
+.vscode/
+Thumbs.db
+DS_Store
+env/
+# Tests
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Package managers
+*.egg-info/
+dist/
+build/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg
+MANIFEST
+
+# Web assets
+*.manifest
+*.webp
+
+# Requirements files
+requirements.txt
+requirements-dev.txt
