@@ -1,10 +1,6 @@
 # users/models.py
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.db import models
-from rest_framework.authtoken.models import Token
-
-from django.dispatch import receiver
-from django.db.models.signals import post_save
 
 class UserManager(BaseUserManager):
     def create_user(self, username, phone_number, password=None):
@@ -33,12 +29,4 @@ class User(AbstractBaseUser):
 
     objects = UserManager()
 
-    def __str__(self):
-        return self.username
-    
-@receiver(post_save, sender = User)
-def generate_auth_token(sender, instance = None, created = False, **kwargs):
-    if created:
-        print("its me")
-        token = Token.objects.create(user = instance)
-        token.save()
+
