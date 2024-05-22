@@ -1,10 +1,18 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from .views import CategoryViewSet
+from rest_framework import status
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from .models import Category
+from .serializers import CategorySerializer
 
-router = DefaultRouter()
-router.register(r'categories', CategoryViewSet)
+class CategoryList(APIView):
+    def get(self, request, format=None):
+        categories = Category.objects.all()
+        serializer = CategorySerializer(categories, many=True)
+        return Response(serializer.data)
 
-urlpatterns = [
-    path('', include(router.urls)),
-]
+    def post(self, request, format=None):
+        serializer = CategorySerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
