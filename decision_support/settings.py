@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     "products"
 ]
 
+AUTH_USER_MODEL = "users.User"
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -55,6 +57,18 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "decision_support.urls"
+
+REST_FRAMEWORK = {
+    "NON_FIELD_ERRORS_KEY":"errors",
+    "DEFAULT_AUTHENTICATION_CLASSES":(
+        "rest_framework.authentication.TokenAuthentication",
+        "rest_framework.authentication.SessionAuthentication"
+    ),
+    "DEFAULT_PERMISSION_CLASSES": (
+    "rest_framework.permissions.IsAuthenticated",
+    )
+}
+
 
 TEMPLATES = [
     {
