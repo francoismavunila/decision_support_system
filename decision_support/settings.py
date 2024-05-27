@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "users",
     "categories",
-    "products"
+    "products",
+    "corsheaders",
 ]
 
 AUTH_USER_MODEL = "users.User"
@@ -54,8 +55,10 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
 ]
-
+CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = "decision_support.urls"
 
 REST_FRAMEWORK = {
