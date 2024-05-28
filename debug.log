@@ -1,0 +1,250 @@
+Watching for file changes with StatReloader
+Division by zero error
+Traceback (most recent call last):
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py", line 14, in get
+    result = 1 / 0  # This will raise a ZeroDivisionError
+             ~~^~~
+ZeroDivisionError: division by zero
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\decision_support\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\decision_support\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /predict/
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /predict/
+Method Not Allowed: /predict/
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /predict/
+Traceback (most recent call last):
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\rest_framework\views.py", line 471, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\rest_framework\views.py", line 482, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py", line 66, in post
+    prediction = model.predict([input_data])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\ensemble\_forest.py", line 1063, in predict
+    X = self._validate_X_predict(X)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\ensemble\_forest.py", line 641, in _validate_X_predict
+    X = self._validate_data(
+        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\base.py", line 633, in _validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\utils\validation.py", line 1007, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\utils\_array_api.py", line 746, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 2 dimensions. The detected shape was (1, 7) + inhomogeneous part.
+Internal Server Error: /predict/
+Traceback (most recent call last):
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\rest_framework\views.py", line 471, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\rest_framework\views.py", line 482, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py", line 66, in post
+    prediction = model.predict([input_data])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\ensemble\_forest.py", line 1063, in predict
+    X = self._validate_X_predict(X)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\ensemble\_forest.py", line 641, in _validate_X_predict
+    X = self._validate_data(
+        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\base.py", line 633, in _validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\utils\validation.py", line 1007, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\utils\_array_api.py", line 746, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 2 dimensions. The detected shape was (1, 7) + inhomogeneous part.
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /predict/
+Traceback (most recent call last):
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\rest_framework\views.py", line 471, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\rest_framework\views.py", line 482, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py", line 71, in post
+    # Make prediction
+                 ^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\ensemble\_forest.py", line 1063, in predict
+    X = self._validate_X_predict(X)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\ensemble\_forest.py", line 641, in _validate_X_predict
+    X = self._validate_data(
+        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\base.py", line 633, in _validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\utils\validation.py", line 1007, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\utils\_array_api.py", line 746, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 2 dimensions. The detected shape was (1, 7) + inhomogeneous part.
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /predict/
+Traceback (most recent call last):
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\rest_framework\views.py", line 471, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\rest_framework\views.py", line 482, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py", line 66, in post
+    prediction = model.predict([input_data])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\ensemble\_forest.py", line 1063, in predict
+    X = self._validate_X_predict(X)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\ensemble\_forest.py", line 641, in _validate_X_predict
+    X = self._validate_data(
+        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\base.py", line 633, in _validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\utils\validation.py", line 1007, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\env\Lib\site-packages\sklearn\utils\_array_api.py", line 746, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 2 dimensions. The detected shape was (1, 7) + inhomogeneous part.
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
+Watching for file changes with StatReloader

@@ -24,4 +24,5 @@ urlpatterns = [
     path("category/", include('categories.urls')),
     path("auth/", include('users.urls')),
     path("products/", include('products.urls')),
+    path("predict/", include('dss.urls')),
 ]
