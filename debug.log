@@ -248,3 +248,6 @@ C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss
 Watching for file changes with StatReloader
 C:\Users\mavun\OneDrive\Documents\programing\decision_support_system_backend\dss\views.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\mavun\\OneDrive\\Documents\\programing\\decision_support_system_backend\\env\\Lib\\site-packages\\certifi\\cacert.pem'

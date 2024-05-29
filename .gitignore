@@ -31,3 +31,6 @@ MANIFEST
 # Requirements files
 requirements.txt
 requirements-dev.txt
+
+# Environment variables
+.env
