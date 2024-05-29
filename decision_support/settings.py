@@ -177,16 +177,19 @@ if not DEBUG:
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
-ALLOWED_HOSTS = [
-    'https://decision-support-system.onrender.com',
-    'https://decision-support-system-frontend.vercel.app/signup'
-    'localhost',
-    '127.0.0.1'
-]
+ALLOWED_HOSTS = ['*']
 
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
-if RENDER_EXTERNAL_HOSTNAME:
-    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+
+# ALLOWED_HOSTS = [
+#     # 'https://decision-support-system.onrender.com',
+#     # 'https://decision-support-system-frontend.vercel.app/signup'
+#     # 'localhost',
+#     # '127.0.0.1'
+# ]
+
+# RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+# if RENDER_EXTERNAL_HOSTNAME:
+#     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
