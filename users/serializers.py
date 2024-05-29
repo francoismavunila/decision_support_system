@@ -1,22 +1,31 @@
-# users/serializers.py
 from rest_framework import serializers
+from rest_framework.validators import ValidationError
 from .models import User
+from rest_framework.authtoken.models import Token
 
-class UserSerializer(serializers.Serializer):
-    username = serializers.CharField(max_length=150)
-    phone_number = serializers.CharField(max_length=15)
+class SignUpSerializer(serializers.ModelSerializer):
+    # email = serializers.CharField(max_length = 80)
+    first_name = serializers.CharField(max_length = 45)
+    last_name = serializers.CharField(max_length = 45)
+    username = serializers.CharField(max_length = 45)
+    password = serializers.CharField(min_length = 6, write_only=True)
+    class Meta:
+        model = User
+        fields = ('first_name','last_name', 'username', 'password')
+    def validate(self, attrs):
+        username_exist = User.objects.filter(username=attrs['username']).exists()
 
-    def validate(self, data):
-        if not data.get('username'):
-            raise serializers.ValidationError('Username is required')
-        if not data.get('phone_number'):
-            raise serializers.ValidationError('Phone number is required')
-        return data
+        if username_exist:
+            raise serializers.ValidationError({
+                "username": "This username has already been used."
+            })
+
+        return super().validate(attrs)
     
-    
-    def create(self, validated_data):
-        user = User.objects.create_user(
-            validated_data['username'],
-            phone_number=validated_data['phone_number'],
-        )
+    def create(self,validated_data):
+        password = validated_data.pop("password")
+        user = super().create(validated_data)
+        user.set_password(password)
+        user.save()
+        Token.objects.create(user = user)
         return user
