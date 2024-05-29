@@ -1,0 +1,14 @@
+# Ignore the env directory
+env
+
+# Ignore all .pyc files
+*.pyc
+
+# Ignore all .log files
+*.log
+
+# Ignore the .git directory
+.git
+
+# Ignore the .env file
+.env
